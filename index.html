@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Video BackGround</title>
+</head>
+
+<body>
+
+
+    <section class="nav-wraper" id="nav-wraper">
+        <header>
+            <div>
+                <h1>Anup Das</h1>
+            </div>
+            <div class="toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+        </header>
+
+        <video src="video.mp4" muted autoplay loop></video>
+
+        <div class="overlay"></div>
+
+        <div class="content">
+            <h1>Never Stop</h1>
+            <h3>Exploring The World</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit aliquam ab rem in sit nisi, eum
+                cupiditate. Explicabo, saepe laboriosam?</p>
+            <a href="#">Explore</a>
+        </div>
+
+    </section>
+
+    <div class="menu" id="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </div>
+
+
+
+    <script>
+        function toggleMenu() {
+
+            const nav = document.getElementById('nav-wraper')
+            const menu = document.getElementById('menu')
+
+            nav.classList.toggle('active')
+            menu.classList.toggle('active')
+        }
+
+    </script>
+
+</body>
+
+</html>

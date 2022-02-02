@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.nav-wraper.active{
+    right: 30%;
+}
+
+
+.nav-wraper{
+    width: 100%;
+    height: 100vh;
+    background-color: rebeccapurple;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    transition: 1s;
+}
+
+.nav-wraper header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 100px;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.toggle{
+    cursor: pointer;
+    font-size: 26px;
+}
+
+
+.nav-wraper video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #1ee7ee9c;
+    position: absolute;
+    left: 0;
+    top: 0;
+    mix-blend-mode: overlay;
+    /* opacity: .2; */
+}
+
+.content{
+    position: relative;
+    z-index: 100;
+    max-width: 700px;
+    color: white;
+
+}
+.content h1{
+    line-height: 1rem;
+    font-size: 5em;
+    text-transform: uppercase;
+}
+
+.content h3{
+    font-size: 4em;
+    text-transform: uppercase;
+    line-height: 8rem;
+}
+
+.content a{
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: white;
+    color: #111;
+    letter-spacing: 2px;
+    transition: .2s;
+}
+
+.content a:hover{
+    letter-spacing: 5px;
+}
+
+/* 
+.nav-wraper.active{
+    right: 20%;
+} */
+
+
+.menu.active{
+    right: 0;
+}
+
+.menu{
+    background-color: tomato;
+    width: 30%;
+    height: 100%;
+    right: 0;
+    z-index: -2;
+    position: absolute;
+    /* z-index: 200; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ul {
+}
+.menu ul li{
+    list-style: none;
+    padding: 15px 0;
+    color: black;
+}
+.menu ul li a{
+    color: white;
+}
+.menu ul li a:hover{
+    color: #111;
+}
