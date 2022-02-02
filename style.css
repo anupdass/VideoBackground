@@ -74,12 +74,12 @@
 }
 .content h1{
     /* line-height: 1rem; */
-    font-size: 5em;
+    font-size: 3em;
     text-transform: uppercase;
 }
 
 .content h3{
-    font-size: 4em;
+    font-size: 2em;
     text-transform: uppercase;
     line-height: 8rem;
 }
